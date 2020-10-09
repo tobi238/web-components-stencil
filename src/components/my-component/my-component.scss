@@ -1,0 +1,20 @@
+@use "@material/icon-button";
+@use '@material/button/mdc-button';
+@use '@material/button';
+
+@include icon-button.core-styles;
+
+:host {
+  display: block;
+}
+
+.foo-button {
+  display: block;
+  @include button.container-fill-color(rgb(0, 102, 255));
+  @include button.ink-color(white);
+  margin: 2em 2em 2em 0;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+}
